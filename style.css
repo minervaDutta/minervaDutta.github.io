@@ -178,7 +178,7 @@ h3 {
     }
 }
 
-pure-table {
+.pure-table {
     /* Remove spacing between table cells (from Normalize.css) */
     border-collapse: collapse;
     border-spacing: 0;
