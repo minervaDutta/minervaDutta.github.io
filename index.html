@@ -63,18 +63,30 @@
                             <div class="post-meta"><a href="https://youtu.be/FyAAIHHClqI" target="_blank" >Explanation Video</a></div>
                         </p>
                         <p>
-                            <h2>Setting up git repo source GitHub  repo to local to your GitHub repo:</h2>
+                            <h2>Setting up git repo (source-GitHub: Original github repo -> local -> your GitHub repo:</h2>
                             <ul>
                                 <li>git clone {source repository name} -> opens a repository locally</li>
                                 <li>git remote set-url origin {your new empty repository name} -> You set up an upstream link to upload</li>
                                 <li>git branch -m "main"</li>
+                                <li>Note: forking allows you to create a new repository which can then be cloned, you can also create a brand new one (here I have used the latter)</li>
                             </ul>
-                            <h2>Setting up git repo local to GitHub:</h2>
+                            <h2>Setting up git repo from local to GitHub:</h2>
                                 <ul>
                                 <li>git init -> activates git locally</li>
                                 <li>git branch -m "main"-> renames from master, remember in GitHub, string keywords are in “”</li>
                                 <li>git remote add {remote-name like origin} {GitHub-repo-name}</li>
                                 <li>git push --set-upstream origin main</li>
+                                </ul>
+
+                            <h2> Collaborating on a github repo </h2>
+                                <ul>
+                                    <li>git clone <repo name></li>
+                                    <li> git init -> Initialize local repo</li>
+                                    <li>git pull origin master --rebase</li>
+                                    <li>git add .</li>
+                                    <li>git commit -m "message </li>
+                                    <li>git push origin master</li>
+                                    <li>git pull and git push done this way avoid conflicts when we use overlapping names on remote and local</li>
                                 </ul>
                         </p>
                     </div>
